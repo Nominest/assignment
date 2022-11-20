@@ -1,0 +1,49 @@
+.dontclick {
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+    color: darkgray;
+    font-size: 30px;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .dontclick:hover {
+    background-color: aqua;
+    color: aliceblue;
+    cursor: pointer;
+    transition: width 2s ease-in-out;
+    width: 500px;
+  }
+  
+  .dontclick:active {
+    background-color: black;
+    color: white;
+    width: 500px;
+  }
+  input{
+    color: white;
+    width: 200px;
+  }
+  input :hover {
+    width: 400px;
+  }
+  .click {
+    display: block;    width: 200px;
+    height: 100px;
+    background-color: gray;
+    color: white;
+    font-size: 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.click:hover{
+    background-color: dark;
+}
+.click:active {
+    background-color: darkblue;
+    transition: width 2s ease-in-out;
+    width: 500px;
+}
