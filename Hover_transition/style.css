@@ -38,12 +38,13 @@
     border: none;
     border-radius: 30px;
     cursor: pointer;
+    
 }
 .click:hover{
     background-color: dark;
 }
 .click:active {
     background-color: darkblue;
-    transition: width 2s ease-in-out;
     width: 500px;
+    transition: width 2s ease-in-out;
 }
