@@ -1,0 +1,47 @@
+.toggle {
+    appearance: none;
+    margin: 0;
+    min-width: 42px;
+    min-height: 24px;
+    max-width: 42px;
+    max-height: 24px;
+    border-radius: 12px;
+    position: relative;
+    background-color: #e8e8e8;
+    border: 1px solid #979797;
+    cursor: pointer;
+    transition: background-color .2s, border-color .2s;
+}
+.toggle.dark {
+    background-color: #1a1a1a;
+    border-color: #e8e8e8;
+}
+.toggle:checked {
+    background-color: #1dca4f;
+    border-color: #106128;
+}
+.toggle.dark:checked {
+    background-color: #219b44;
+}
+.toggle:after {
+    content: ' ';
+    min-height: 20px;
+    min-width: 20px;
+    border: 1px solid #979797;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: absolute;
+    left: 1px;
+    pointer-events: none;
+    top: 1px;
+    transition: left .2s, border-color .2s;
+}
+.toggle.dark:after {
+    background-color: #1a1a1a;
+    border-color: #e8e8e8;
+}
+.toggle:checked:after {
+    left: calc(100% - 20px - 1px);
+    border-color: #106128;
+}
