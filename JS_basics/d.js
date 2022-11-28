@@ -1,2 +1,4 @@
-let aside = 1, bside = 2, cside = 3;
-console.log(per = aside + bside + cside);
+let radius = 3;
+const  PI = 3.14;
+let area = (PI * radius * radius );
+console.log ("Area of the circle is : " + area );

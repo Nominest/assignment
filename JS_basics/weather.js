@@ -19,11 +19,11 @@ let celsius = ((farenheit - 32) * 5) / 9;
 alert("Farenheit to Celsius: " +  celsius);
 
 //perimeter of traingle
-let aside = parseFloat(prompt("Enter a side here"))
-let bside = parseFloat(prompt("Enter b side here"))
-let cside = parseFloat(prompt("Enter c side here"))
-let perimeter = (aside + bside + cside)
-alert ("Perimeter of the triangle is : " + perimeter)
+let aside = parseFloat(prompt("Enter a side here"));
+let bside = parseFloat(prompt("Enter b side here"));
+let cside = parseFloat(prompt("Enter c side here"));
+let perimeter = (aside + bside + cside);
+alert ("Perimeter of the triangle is : " + perimeter);
 
 //perimeter of a triangle 
 let aside = 1, bside = 2, cside = 3;
