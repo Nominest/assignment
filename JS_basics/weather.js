@@ -29,4 +29,15 @@ alert ("Perimeter of the triangle is : " + perimeter);
 let aside = 1, bside = 2, cside = 3;
 let.console(aside + bside + cside);
 
+// Area of a circle
+let radius = parseFloat(prompt("Enter circle radius here"));
+const  PI = 3.14;
+let area = (PI * radius * radius );
+alert ("Area of the circle is : " + area );
+
+// Area of a circle
+let radius = 3;
+const  PI = 3.14;
+let area = (PI * radius * radius );
+console.log ("Area of the circle is : " + area );
 
