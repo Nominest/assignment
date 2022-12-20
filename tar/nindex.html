@@ -1,13 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./nstyle.css" />
+    <link rel="stylesheet" href="./function.js" />
+    <script src="./function.js"></script>
+    <meta charset="UTF-8" />
+    <title>Өнгөрсөн, одоо, ирээдүй цагийг илтгэх 3 тарот картны мэрэг</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <!--JS for this webapp-->
+    <script src="js/index.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Satisfy"
+      rel="stylesheet"
+    />
+    <!--lodash-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.2/lodash.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.2/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.2/lodash.min.js.map"></script>
   </head>
+
   <body>
-    <script src="./nfunction.js"></script>
-  </body>
-</html>
+    <div class="container-flex">
+      <div class="jumbotron">
+        <h3>Өнгөрсөн, одоо, ирээдүй цагийг илтгэх 3 тарот картны мэрэг</h3>
+        <br />
+        <p id="blurb" class="blurb">
+          3 картны мэрэг нь ойлгоход хамгийн амархан, энгийн мэрэгний төрөл юм.<br />
+        Зүүн талд байрлах өнгөрсөн үеийг илтгэх карт нь одоогийн таны байдлыг бий болоход нөлөөлсөн зүйлийг илтгэнэ. Голд байрлах карт нь таны одоогийн нөхцөл байдлыг илтгэнэ. Харин баруун талд байрлах карт нь та одоогийн нөхцөл байдлаа өөрчлөхгүй энэ байдлаараа байвал ямар ирээдүй таныг хүлээж байгааг илтгэнэ.
+          <br />
+          <br />
+          Асуултандаа төвлөрөн бэлэн болсон үедээ "Мэрэглэх" гэсэн товч дээр дарна уу. 
+        </p>
+        <div class="container-flex">
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                id="pastPresentFuture"
+                onclick="pastPresentFuture()"
+              >
+                Мэрэглэх
+              </button>
