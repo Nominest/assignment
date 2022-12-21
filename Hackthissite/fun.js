@@ -10,15 +10,14 @@ function check(x) {
 };
 console.log(moo);
 
-let password = "moo";
-let form = document.querySelector(".form");
-let input = document.querySelector(".password");
+// let password = document.getElementsByClassName("password");
+let form = document.getElementById("form");
+let input = document.getElementById("password");
 let output = false;
-let btn = document.querySelector(".btn");
+let btn = document.getElementById("btn");
 input;
 btn.addEventListener("click", () => {
-  let moo = input.value;
-  if (password.length == moo) {
+  if (input.length == moo) {
     output = true;
   } else {
     output = false;
@@ -44,7 +43,16 @@ btn.addEventListener("click", () => {
     document.querySelector("#tip").innerText = "💩 ";
     setInterval(() => {
       document.querySelector("#tip").innerHTML =
-       "Password олоорой!";
+       `Password hint : </br> 
+       let foo = 5 + 6 * 7; </br>
+       let bar = foo % 8; </br>
+       let moo = bar * 2; </br>
+       let rar = moo / 3; </br>
+       function check(x) {  </br>
+         if (x.length == moo) { </br>
+           alert ("Win!")  </br>
+         }  </br>
+       }; `;
       input.style.backgroundColor = "black";
       input.placeholder = "Enter your password ";
     }, 1700);
