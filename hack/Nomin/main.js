@@ -1,28 +1,28 @@
-let password = "Password";
-let form = document.querySelector(".form");
-let input = document.querySelector(".password");
-let output = false;
-let btn = document.querySelector(".btn");
-input;
-btn.addEventListener("click", () => {
-  let inputValue = input.value;
-  if (password == inputValue) {
-    output = true;
-  } else {
-    output = false;
+let foo = 5 + 6 * 7;
+let bar = foo % 8; 
+let moo = bar * 2; 
+let rar = moo / 3; 
+function check(x) { 
+  if (x.length == moo) { 
+   
   }
-});
+  return moo
+};
+console.log(moo);
 
-//   if (output) {
-//     btn.style.display = "none";
-//     let nextBtn = document.createElement("a");
-//     nextBtn.setAttribute("href", "");
-//     nextBtn.setAttribute("class", "nextBtn");
-//     nextBtn.innerText = "Next";
-//     form.appendChild(nextBtn);
-//     document.getElementById("tip").innerHTML =
-//       "Баяр хүргье та амжилтай давлаа !!! " +
-//       "<br>" +
-//       '<span style= " font-size: 14px;">Next дарж үргэлжлүүлнэ үү<span>';
-//   }
-// });
+
+function stringlength(inputtxt)
+{ 
+let field = inputtxt.value; 
+
+if(field.length == moo)
+{ 
+alert("You win");
+return false;
+}
+else
+{ 
+alert('You lost');
+return true;
+}
+}
