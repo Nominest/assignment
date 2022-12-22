@@ -9,16 +9,21 @@ function check(x) {
 }
 console.log(moo);
 
-let password;
+
 let form = document.getElementById("form");
-let input = document.getElementById("password");
+
 let output = false;
 let btn = document.getElementById("btn");
-input;
+
+let input1 = document.getElementById("password");
 btn.addEventListener("click", () => {
-  if (password.length == moo) {
+  let input = document.getElementById("password").value;
+  console.log('input',input)
+  if (input.length == moo) {
+    console.log('true')
     output = true;
   } else {
+    console.log('fsldr')
     output = false;
   }
   if (output) {
@@ -36,23 +41,28 @@ btn.addEventListener("click", () => {
       "rgba(0, 0, 0, 0.468);";
     document.querySelector(".tip").style.backgroundColor = "rgb(49, 214, 34)";
   } else {
-    input.style.backgroundColor = "red";
-    input.value = "";
-    input.placeholder = "wrong!!!!";
+    input1.style.backgroundColor = "red";
+    input1.value = "";
+    input1.placeholder = "wrong!!!!";
     document.querySelector("#tip").innerText = "💩 ";
     setInterval(() => {
       document.querySelector("#tip").innerHTML = `Password hint : </br> 
-       let foo = 5 + 6 * 7; </br>
-       let bar = foo % 8; </br>
-       let moo = bar * 2; </br>
-       let rar = moo / 3; </br>
-       function check(x) {  </br>
-         if (x.length == moo) { </br>
-           alert ("Win!")  </br>
-         }  </br>
-       }; `;
-      input.style.backgroundColor = "black";
-      input.placeholder = "Enter your password ";
+      let foo = 5 + 6 * 7  </br>
+      let bar = foo % 8 </br>
+      let moo = bar * 2 </br>
+      let rar = moo / 3 </br>
+      function check(x) </br>
+      { </br>
+              if (x.length == moo) </br>
+              { </br>
+                              alert("win!"); </br>
+                              window.location += "password="+x; </br>
+              } else { </br>
+                              alert("fail D:"); </br>
+         } </br>
+      } </br>`;
+      input1.style.backgroundColor = "";
+      input1.placeholder = "Enter your password ";
     }, 1700);
   }
 });
