@@ -1,23 +1,22 @@
 let foo = 5 + 6 * 7;
-let bar = foo % 8; 
-let moo = bar * 2; 
-let rar = moo / 3; 
-function check(x) { 
-  if (x.length == moo) { 
-   
+let bar = foo % 8;
+let moo = bar * 2;
+let rar = moo / 3;
+function check(x) {
+  if (x.length == moo) {
   }
-  return moo
-};
+  return moo;
+}
 console.log(moo);
 
-// let password = document.getElementsByClassName("password");
+let password;
 let form = document.getElementById("form");
 let input = document.getElementById("password");
 let output = false;
 let btn = document.getElementById("btn");
 input;
 btn.addEventListener("click", () => {
-  if (input.length == moo) {
+  if (password.length == moo) {
     output = true;
   } else {
     output = false;
@@ -42,8 +41,7 @@ btn.addEventListener("click", () => {
     input.placeholder = "wrong!!!!";
     document.querySelector("#tip").innerText = "💩 ";
     setInterval(() => {
-      document.querySelector("#tip").innerHTML =
-       `Password hint : </br> 
+      document.querySelector("#tip").innerHTML = `Password hint : </br> 
        let foo = 5 + 6 * 7; </br>
        let bar = foo % 8; </br>
        let moo = bar * 2; </br>
